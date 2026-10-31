@@ -1,126 +1,181 @@
-<div align="center">
+# Sonrisa Perfecta
 
-# 🦷 Sonrisa Perfecta
-
-**Sistema de gestión odontológica**
+Sistema de gestión odontológica desarrollado con PHP y MySQL. Permite administrar pacientes, odontólogos, citas, diagnósticos, tratamientos, servicios y pagos desde una interfaz oscura y adaptable a distintos dispositivos.
 
 ![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-4479A1?logo=mysql&logoColor=white)
-![XAMPP](https://img.shields.io/badge/XAMPP-compatible-FB7A24?logo=xampp&logoColor=white)
-![Estado](https://img.shields.io/badge/uso-acad%C3%A9mico-blue)
+![Estado](https://img.shields.io/badge/estado-proyecto%20acad%C3%A9mico-lightgrey)
 
-Aplicación web en **PHP + MySQL** con interfaz oscura y responsive,
-autenticación de usuarios y operaciones CRUD completas.
+## Contenido
 
-[Instalación](#-instalación-en-xampp) ·
-[Módulos](#-módulos-incluidos) ·
-[Seguridad](#-seguridad-implementada) ·
-[Consideraciones](#%EF%B8%8F-consideraciones-importantes)
+1. [Descripción general](#descripción-general)
+2. [Capturas de pantalla](#capturas-de-pantalla)
+3. [Tecnologías](#tecnologías)
+4. [Requisitos](#requisitos)
+5. [Instalación](#instalación)
+6. [Estructura del proyecto](#estructura-del-proyecto)
+7. [Módulos](#módulos)
+8. [Seguridad](#seguridad)
+9. [Solución de problemas](#solución-de-problemas)
+10. [Limitaciones y hoja de ruta](#limitaciones-y-hoja-de-ruta)
+11. [Licencia y autoría](#licencia-y-autoría)
 
-</div>
+## Descripción general
 
----
+Sonrisa Perfecta centraliza la operación diaria de un consultorio odontológico:
 
-## ✨ Características principales
+- Registro y consulta de pacientes y su historial.
+- Programación de citas con odontólogos.
+- Registro de diagnósticos, tratamientos y servicios ofrecidos.
+- Control de pagos con distintos métodos.
+- Reporte mensual de ingresos, atenciones y citas pendientes.
 
-- 🔐 Autenticación segura (login, registro y cierre de sesión)
-- 📊 Dashboard con indicadores, próximas citas y pacientes recientes
-- 🗂️ CRUD completo de las entidades clínicas y administrativas
-- 💳 Registro de pagos con múltiples métodos
-- 🖨️ Reportes imprimibles
-- 📱 Diseño adaptable a escritorio, tablet y móvil
+## Capturas de pantalla
 
-## 📋 Requisitos
-
-| Componente | Versión / Detalle |
+| Inicio de sesión | Dashboard |
 |---|---|
-| Servidor local | XAMPP (Apache + MySQL) o equivalente |
-| PHP | 8.1 o superior, con extensiones `PDO` y `pdo_mysql` |
-| Base de datos | MySQL 5.7+ o MariaDB 10.4+ |
-| Navegador | Cualquier versión actualizada |
+| ![Login](docs/img/login.png) | ![Dashboard](docs/img/dashboard.png) |
 
-## 🚀 Instalación en XAMPP
+| Gestión de pacientes | Reporte mensual |
+|---|---|
+| ![Pacientes](docs/img/pacientes.png) | ![Reportes](docs/img/reportes.png) |
 
-**1. Copia el proyecto**
-Descomprime la carpeta `sonrisa_perfecta` dentro de `C:\xampp\htdocs\`.
+> Guarda tus capturas en `docs/img/` con esos nombres, o ajusta las rutas.
 
-**2. Inicia los servicios**
-Abre el *XAMPP Control Panel* y activa **Apache** y **MySQL**.
+## Tecnologías
 
-**3. Importa la base de datos**
-1. Entra a `http://localhost/phpmyadmin`.
+| Capa | Tecnología |
+|---|---|
+| Backend | PHP 8.1+ con PDO |
+| Base de datos | MySQL 5.7+ / MariaDB 10.4+ |
+| Frontend | HTML5, CSS3 y JavaScript (tema oscuro, diseño responsive) |
+| Servidor local | Apache (XAMPP) |
+
+## Requisitos
+
+- XAMPP (Apache + MySQL) o un entorno equivalente.
+- PHP 8.1 o superior con las extensiones `PDO` y `pdo_mysql` habilitadas.
+- MySQL 5.7+ o MariaDB 10.4+.
+- Navegador actualizado (Chrome, Edge, Firefox o Safari).
+
+## Instalación
+
+### 1. Copiar el proyecto
+
+Descomprime la carpeta `sonrisa_perfecta` en el directorio público de Apache:
+
+```
+C:\xampp\htdocs\sonrisa_perfecta
+```
+
+### 2. Iniciar los servicios
+
+Abre el Panel de Control de XAMPP y activa **Apache** y **MySQL**.
+
+### 3. Importar la base de datos
+
+1. Abre `http://localhost/phpmyadmin`.
 2. Ve a la pestaña **Importar**.
-3. Selecciona `database/sonrisa_perfecta.sql` y ejecuta la importación.
+3. Selecciona el archivo `database/sonrisa_perfecta.sql` y pulsa **Importar**.
 
-**4. Verifica la conexión**
-Revisa `config/database.php`. Los valores predeterminados de XAMPP son:
+### 4. Configurar la conexión
 
-| Parámetro | Valor |
+Revisa `config/database.php`. Los valores por defecto de XAMPP son:
+
+```php
+host     = 127.0.0.1
+dbname   = sonrisa_perfecta
+user     = root
+password = (vacía)
+```
+
+### 5. Crear el primer usuario
+
+Entra a `http://localhost/sonrisa_perfecta/register.php` y registra una cuenta.
+
+### 6. Iniciar sesión
+
+Accede desde `http://localhost/sonrisa_perfecta/login.php`.
+
+## Estructura del proyecto
+
+```
+sonrisa_perfecta/
+├── config/
+│   └── database.php        # Conexión PDO
+├── database/
+│   └── sonrisa_perfecta.sql
+├── docs/
+│   └── img/                # Capturas para este README
+├── login.php
+├── register.php
+└── README.md
+```
+
+> Ajusta este árbol para que refleje las carpetas reales del proyecto (módulos, assets, includes, etc.).
+
+## Módulos
+
+| Módulo | Funciones |
 |---|---|
-| Host | `127.0.0.1` |
-| Base de datos | `sonrisa_perfecta` |
-| Usuario | `root` |
-| Contraseña | *(vacía)* |
+| Acceso | Inicio de sesión, registro y cierre de sesión |
+| Dashboard | Indicadores, próximas citas y pacientes recientes |
+| Pacientes | Alta, consulta, edición y eliminación |
+| Odontólogos | Alta, consulta, edición y eliminación |
+| Citas | Alta, consulta, edición y eliminación |
+| Diagnósticos | Alta, consulta, edición y eliminación |
+| Tratamientos | Alta, consulta, edición y eliminación |
+| Servicios | Alta, consulta, edición y eliminación |
+| Pagos | Registro por efectivo, tarjeta de crédito, tarjeta de débito o Yape |
+| Reportes | Ingresos mensuales, atenciones y citas pendientes, con opción de imprimir |
 
-**5. Crea tu primer usuario**
-Abre 👉 `http://localhost/sonrisa_perfecta/register.php`
+Todas las tablas incluyen búsqueda rápida.
 
-**6. Inicia sesión**
-Ingresa desde 👉 `http://localhost/sonrisa_perfecta/login.php`
+## Seguridad
 
-## 🧩 Módulos incluidos
-
-| Módulo | Descripción |
+| Riesgo | Medida aplicada |
 |---|---|
-| 🔑 **Acceso** | Login, registro de usuarios y cierre de sesión |
-| 📈 **Dashboard** | Indicadores, próximas citas y pacientes recientes |
-| 🧑‍🤝‍🧑 **Pacientes** | CRUD completo |
-| 🩺 **Odontólogos** | CRUD completo |
-| 📅 **Citas** | CRUD completo |
-| 📝 **Diagnósticos** | CRUD completo |
-| 🦷 **Tratamientos** | CRUD completo |
-| 🧾 **Servicios** | CRUD completo |
-| 💰 **Pagos** | CRUD completo |
-| 📑 **Reportes** | Ingresos mensuales, atenciones y citas pendientes |
-
-**Métodos de pago:** 💵 Efectivo · 💳 Tarjeta de crédito · 💳 Tarjeta de débito · 📲 Yape
-
-**Extras:** búsqueda rápida en tablas, diseño adaptable e impresión de reportes.
-
-## 🔒 Seguridad implementada
-
-| Medida | Implementación |
-|---|---|
-| Inyección SQL | PDO con consultas preparadas |
-| Contraseñas | `password_hash()` y `password_verify()` |
+| Inyección SQL | Consultas preparadas con PDO |
+| Almacenamiento de contraseñas | `password_hash()` y `password_verify()` |
 | CSRF | Token en todos los formularios POST |
 | XSS | Escape de salida con `htmlspecialchars()` |
-| Sesiones | Regeneración del ID al iniciar sesión |
+| Secuestro de sesión | Regeneración del ID de sesión al iniciar sesión |
 
-## ⚠️ Consideraciones importantes
+## Solución de problemas
 
-> [!WARNING]
-> Este proyecto es una **base funcional académica**. Antes de usarlo con
-> pacientes reales, añade:
-> - Control de permisos por rol
-> - Auditoría de acciones
-> - Copias de seguridad
-> - Validación de solapamiento de citas
-> - Políticas de privacidad y protección de datos
+**Apache no inicia (puerto 80 ocupado).**
+Otro programa (Skype, IIS, etc.) está usando el puerto. Ciérralo o cambia el puerto en `httpd.conf`, y accede con `http://localhost:8080/sonrisa_perfecta/`.
 
-> [!NOTE]
-> **Roles de usuario:** el registro público crea usuarios con rol `recepcion`.
-> Para crear administradores, cambia el rol directamente desde phpMyAdmin o
-> implementa un módulo de administración de usuarios.
+**MySQL no inicia (puerto 3306 ocupado).**
+Es probable que haya otra instancia de MySQL en ejecución. Deténla o cambia el puerto en `my.ini` y en `config/database.php`.
 
-> [!NOTE]
-> **Integridad de datos:** la eliminación de registros relacionados puede ser
-> bloqueada por las claves foráneas para preservar la información.
+**Error "could not find driver".**
+Activa `extension=pdo_mysql` en `php.ini` y reinicia Apache.
 
----
+**Error de conexión a la base de datos.**
+Comprueba que MySQL esté activo, que la base `sonrisa_perfecta` exista y que las credenciales de `config/database.php` sean correctas.
 
-<div align="center">
+**La importación del SQL falla o se corta.**
+Aumenta `upload_max_filesize` y `post_max_size` en `php.ini`, o importa el archivo desde la consola con `mysql -u root < database/sonrisa_perfecta.sql`.
 
-Hecho con 🦷 para fines académicos
+**No puedo eliminar un registro.**
+Las claves foráneas lo impiden si existen datos relacionados (por ejemplo, un paciente con citas). Elimina primero los registros dependientes.
 
-</div>
+## Limitaciones y hoja de ruta
+
+Este proyecto es una base funcional con fines académicos y **no debe usarse con datos reales de pacientes** sin completar, como mínimo:
+
+- [ ] Permisos por rol en cada módulo.
+- [ ] Registro de auditoría de acciones.
+- [ ] Copias de seguridad automatizadas.
+- [ ] Validación de solapamiento de citas.
+- [ ] Política de privacidad y cumplimiento de la normativa de protección de datos personales.
+- [ ] Módulo de administración de usuarios.
+
+**Sobre los roles:** el registro público crea usuarios con rol `recepcion`. Para crear un administrador, cambia el rol directamente en phpMyAdmin (tabla de usuarios) hasta que exista un módulo de gestión.
+
+## Licencia y autoría
+
+- **Autor:** _tu nombre_
+- **Institución / curso:** _opcional_
+- **Licencia:** _MIT, o indica la que corresponda_
