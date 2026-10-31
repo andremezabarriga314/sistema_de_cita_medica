@@ -1,23 +1,24 @@
 <div align="center">
 
-<img src="docs/banner.svg" alt="Sonrisa Perfecta" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=waving&height=260&color=0:22d3ee,100:6366f1&text=Sonrisa%20Perfecta&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Sistema%20de%20gesti%C3%B3n%20odontol%C3%B3gica&descAlignY=58&descSize=20&animation=fadeIn" alt="Sonrisa Perfecta" width="100%">
 
-<a href="https://github.com/tu-usuario/sonrisa_perfecta">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=22D3EE&center=true&vCenter=true&width=620&lines=Gestiona+pacientes+y+citas;Controla+tratamientos+y+pagos;Reportes+mensuales+listos+para+imprimir;Interfaz+oscura+y+100%25+responsive" alt="Typing SVG">
-</a>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=22D3EE&center=true&vCenter=true&width=640&lines=Gestiona+pacientes+y+citas;Controla+tratamientos+y+pagos;Reportes+mensuales+listos+para+imprimir;Interfaz+oscura+y+100%25+responsive" alt="Typing SVG">
 
-<br>
+<br><br>
 
 ![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![XAMPP](https://img.shields.io/badge/XAMPP-Ready-FB7A24?style=for-the-badge&logo=xampp&logoColor=white)
-![Seguridad](https://img.shields.io/badge/CSRF%20%7C%20PDO%20%7C%20Hash-34D399?style=for-the-badge)
+![Responsive](https://img.shields.io/badge/Dise%C3%B1o-Responsive-34D399?style=for-the-badge)
+![Estado](https://img.shields.io/badge/Uso-Acad%C3%A9mico-6366F1?style=for-the-badge)
+
+<br>
 
 [**Instalación**](#-instalación-rápida) &nbsp;•&nbsp;
 [**Módulos**](#-módulos) &nbsp;•&nbsp;
 [**Seguridad**](#-seguridad) &nbsp;•&nbsp;
-[**Soporte**](#-solución-de-problemas) &nbsp;•&nbsp;
-[**Roadmap**](#-roadmap)
+[**Soporte**](#️-solución-de-problemas) &nbsp;•&nbsp;
+[**Roadmap**](#️-roadmap)
 
 </div>
 
@@ -27,34 +28,49 @@
 
 Aplicación web en **PHP + MySQL** que centraliza la operación diaria de un consultorio odontológico: pacientes, odontólogos, citas, diagnósticos, tratamientos, servicios y pagos, con autenticación y una interfaz oscura que se adapta a escritorio, tablet y móvil.
 
+<div align="center">
+
 <table>
 <tr>
-<td align="center" width="25%"><h3>10</h3>módulos integrados</td>
-<td align="center" width="25%"><h3>4</h3>métodos de pago</td>
-<td align="center" width="25%"><h3>5</h3>capas de seguridad</td>
-<td align="center" width="25%"><h3>100%</h3>responsive</td>
+<td align="center" width="25%"><h2>10</h2><sub>MÓDULOS</sub></td>
+<td align="center" width="25%"><h2>4</h2><sub>MÉTODOS DE PAGO</sub></td>
+<td align="center" width="25%"><h2>5</h2><sub>CAPAS DE SEGURIDAD</sub></td>
+<td align="center" width="25%"><h2>100%</h2><sub>RESPONSIVE</sub></td>
 </tr>
 </table>
+
+</div>
+
+## 🧰 Tecnologías
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=php,mysql,html,css,js,apache&theme=dark" alt="Tecnologías">
+
+</div>
 
 ## 📸 Vista previa
 
 <div align="center">
 
-| Login | Dashboard |
-|:---:|:---:|
-| <img src="docs/img/login.png" width="420"> | <img src="docs/img/dashboard.png" width="420"> |
-| **Pacientes** | **Reportes** |
-| <img src="docs/img/pacientes.png" width="420"> | <img src="docs/img/reportes.png" width="420"> |
+<table>
+<tr>
+<td align="center"><img src="https://placehold.co/520x300/0d1424/22d3ee?text=Login&font=montserrat" width="100%"><br><b>Inicio de sesión</b></td>
+<td align="center"><img src="https://placehold.co/520x300/0d1424/6366f1?text=Dashboard&font=montserrat" width="100%"><br><b>Dashboard</b></td>
+</tr>
+<tr>
+<td align="center"><img src="https://placehold.co/520x300/0d1424/34d399?text=Pacientes&font=montserrat" width="100%"><br><b>Gestión de pacientes</b></td>
+<td align="center"><img src="https://placehold.co/520x300/0d1424/22d3ee?text=Reportes&font=montserrat" width="100%"><br><b>Reporte mensual</b></td>
+</tr>
+</table>
 
 </div>
 
-> 💡 Guarda tus capturas en `docs/img/`. Para un efecto animado, graba un GIF del sistema y reemplaza una de las imágenes.
+> 💡 Reemplaza cada `src` por el enlace de tu captura (imgur, postimages, etc.).
 
 ## 🚀 Instalación rápida
 
-```text
-📦 Requisitos:  XAMPP (Apache + MySQL) · PHP 8.1+ con PDO y pdo_mysql · Navegador actualizado
-```
+> 📦 **Requisitos:** XAMPP (Apache + MySQL) · PHP 8.1+ con PDO y `pdo_mysql` · MySQL 5.7+ o MariaDB 10.4+ · Navegador actualizado
 
 <table>
 <tr><td width="60" align="center"><h2>1</h2></td><td><b>Copia el proyecto</b><br>Descomprime <code>sonrisa_perfecta</code> en <code>C:\xampp\htdocs\</code></td></tr>
@@ -70,12 +86,12 @@ Aplicación web en **PHP + MySQL** que centraliza la operación diaria de un con
 
 <br>
 
-```php
-host     = 127.0.0.1
-dbname   = sonrisa_perfecta
-user     = root
-password = (vacía)
-```
+| Parámetro | Valor |
+|---|---|
+| Host | `127.0.0.1` |
+| Base de datos | `sonrisa_perfecta` |
+| Usuario | `root` |
+| Contraseña | *(vacía)* |
 
 </details>
 
@@ -86,7 +102,7 @@ password = (vacía)
 <td width="33%" valign="top">
 
 ### 🧑‍🤝‍🧑 Pacientes
-Altas, consulta, edición y eliminación.
+Alta, consulta, edición y eliminación.
 
 ### 🩺 Odontólogos
 Gestión del equipo profesional.
@@ -131,7 +147,7 @@ Login, registro y cierre de sesión.
 | 🛡️ | Inyección SQL | PDO con consultas preparadas |
 | 🔑 | Contraseñas | `password_hash()` y `password_verify()` |
 | 🎟️ | CSRF | Token en todos los formularios POST |
-| 🧼 | XSS | Escape con `htmlspecialchars()` |
+| 🧼 | XSS | Escape de salida con `htmlspecialchars()` |
 | 🪪 | Sesiones | Regeneración del ID al iniciar sesión |
 
 ## 🛠️ Solución de problemas
@@ -190,3 +206,5 @@ Las claves foráneas lo bloquean si hay datos relacionados. Elimina primero los 
 <sub>Autor: _tu nombre_ · Licencia: _MIT_</sub>
 
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:6366f1,100:22d3ee&section=footer" width="100%">
