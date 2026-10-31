@@ -1,86 +1,74 @@
-# Sonrisa Perfecta
+<div align="center">
 
-Sistema de gestión odontológica desarrollado con PHP y MySQL. Permite administrar pacientes, odontólogos, citas, diagnósticos, tratamientos, servicios y pagos desde una interfaz oscura y adaptable a distintos dispositivos.
+<img src="docs/banner.svg" alt="Sonrisa Perfecta" width="100%">
 
-![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-4479A1?logo=mysql&logoColor=white)
-![Estado](https://img.shields.io/badge/estado-proyecto%20acad%C3%A9mico-lightgrey)
+<a href="https://github.com/tu-usuario/sonrisa_perfecta">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=22D3EE&center=true&vCenter=true&width=620&lines=Gestiona+pacientes+y+citas;Controla+tratamientos+y+pagos;Reportes+mensuales+listos+para+imprimir;Interfaz+oscura+y+100%25+responsive" alt="Typing SVG">
+</a>
 
-## Contenido
+<br>
 
-1. [Descripción general](#descripción-general)
-2. [Capturas de pantalla](#capturas-de-pantalla)
-3. [Tecnologías](#tecnologías)
-4. [Requisitos](#requisitos)
-5. [Instalación](#instalación)
-6. [Estructura del proyecto](#estructura-del-proyecto)
-7. [Módulos](#módulos)
-8. [Seguridad](#seguridad)
-9. [Solución de problemas](#solución-de-problemas)
-10. [Limitaciones y hoja de ruta](#limitaciones-y-hoja-de-ruta)
-11. [Licencia y autoría](#licencia-y-autoría)
+![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![XAMPP](https://img.shields.io/badge/XAMPP-Ready-FB7A24?style=for-the-badge&logo=xampp&logoColor=white)
+![Seguridad](https://img.shields.io/badge/CSRF%20%7C%20PDO%20%7C%20Hash-34D399?style=for-the-badge)
 
-## Descripción general
+[**Instalación**](#-instalación-rápida) &nbsp;•&nbsp;
+[**Módulos**](#-módulos) &nbsp;•&nbsp;
+[**Seguridad**](#-seguridad) &nbsp;•&nbsp;
+[**Soporte**](#-solución-de-problemas) &nbsp;•&nbsp;
+[**Roadmap**](#-roadmap)
 
-Sonrisa Perfecta centraliza la operación diaria de un consultorio odontológico:
+</div>
 
-- Registro y consulta de pacientes y su historial.
-- Programación de citas con odontólogos.
-- Registro de diagnósticos, tratamientos y servicios ofrecidos.
-- Control de pagos con distintos métodos.
-- Reporte mensual de ingresos, atenciones y citas pendientes.
+<br>
 
-## Capturas de pantalla
+## 🦷 ¿Qué es Sonrisa Perfecta?
 
-| Inicio de sesión | Dashboard |
-|---|---|
-| ![Login](docs/img/login.png) | ![Dashboard](docs/img/dashboard.png) |
+Aplicación web en **PHP + MySQL** que centraliza la operación diaria de un consultorio odontológico: pacientes, odontólogos, citas, diagnósticos, tratamientos, servicios y pagos, con autenticación y una interfaz oscura que se adapta a escritorio, tablet y móvil.
 
-| Gestión de pacientes | Reporte mensual |
-|---|---|
-| ![Pacientes](docs/img/pacientes.png) | ![Reportes](docs/img/reportes.png) |
+<table>
+<tr>
+<td align="center" width="25%"><h3>10</h3>módulos integrados</td>
+<td align="center" width="25%"><h3>4</h3>métodos de pago</td>
+<td align="center" width="25%"><h3>5</h3>capas de seguridad</td>
+<td align="center" width="25%"><h3>100%</h3>responsive</td>
+</tr>
+</table>
 
-> Guarda tus capturas en `docs/img/` con esos nombres, o ajusta las rutas.
+## 📸 Vista previa
 
-## Tecnologías
+<div align="center">
 
-| Capa | Tecnología |
-|---|---|
-| Backend | PHP 8.1+ con PDO |
-| Base de datos | MySQL 5.7+ / MariaDB 10.4+ |
-| Frontend | HTML5, CSS3 y JavaScript (tema oscuro, diseño responsive) |
-| Servidor local | Apache (XAMPP) |
+| Login | Dashboard |
+|:---:|:---:|
+| <img src="docs/img/login.png" width="420"> | <img src="docs/img/dashboard.png" width="420"> |
+| **Pacientes** | **Reportes** |
+| <img src="docs/img/pacientes.png" width="420"> | <img src="docs/img/reportes.png" width="420"> |
 
-## Requisitos
+</div>
 
-- XAMPP (Apache + MySQL) o un entorno equivalente.
-- PHP 8.1 o superior con las extensiones `PDO` y `pdo_mysql` habilitadas.
-- MySQL 5.7+ o MariaDB 10.4+.
-- Navegador actualizado (Chrome, Edge, Firefox o Safari).
+> 💡 Guarda tus capturas en `docs/img/`. Para un efecto animado, graba un GIF del sistema y reemplaza una de las imágenes.
 
-## Instalación
+## 🚀 Instalación rápida
 
-### 1. Copiar el proyecto
-
-Descomprime la carpeta `sonrisa_perfecta` en el directorio público de Apache:
-
-```
-C:\xampp\htdocs\sonrisa_perfecta
+```text
+📦 Requisitos:  XAMPP (Apache + MySQL) · PHP 8.1+ con PDO y pdo_mysql · Navegador actualizado
 ```
 
-### 2. Iniciar los servicios
+<table>
+<tr><td width="60" align="center"><h2>1</h2></td><td><b>Copia el proyecto</b><br>Descomprime <code>sonrisa_perfecta</code> en <code>C:\xampp\htdocs\</code></td></tr>
+<tr><td align="center"><h2>2</h2></td><td><b>Inicia los servicios</b><br>Activa <b>Apache</b> y <b>MySQL</b> en el panel de XAMPP.</td></tr>
+<tr><td align="center"><h2>3</h2></td><td><b>Importa la base de datos</b><br><code>localhost/phpmyadmin</code> → <i>Importar</i> → <code>database/sonrisa_perfecta.sql</code></td></tr>
+<tr><td align="center"><h2>4</h2></td><td><b>Verifica la conexión</b><br>Revisa <code>config/database.php</code></td></tr>
+<tr><td align="center"><h2>5</h2></td><td><b>Crea el primer usuario</b><br><code>http://localhost/sonrisa_perfecta/register.php</code></td></tr>
+<tr><td align="center"><h2>6</h2></td><td><b>Inicia sesión</b><br><code>http://localhost/sonrisa_perfecta/login.php</code></td></tr>
+</table>
 
-Abre el Panel de Control de XAMPP y activa **Apache** y **MySQL**.
+<details>
+<summary><b>⚙️ Valores de conexión por defecto en XAMPP</b></summary>
 
-### 3. Importar la base de datos
-
-1. Abre `http://localhost/phpmyadmin`.
-2. Ve a la pestaña **Importar**.
-3. Selecciona el archivo `database/sonrisa_perfecta.sql` y pulsa **Importar**.
-
-### 4. Configurar la conexión
-
-Revisa `config/database.php`. Los valores por defecto de XAMPP son:
+<br>
 
 ```php
 host     = 127.0.0.1
@@ -89,93 +77,116 @@ user     = root
 password = (vacía)
 ```
 
-### 5. Crear el primer usuario
+</details>
 
-Entra a `http://localhost/sonrisa_perfecta/register.php` y registra una cuenta.
+## 🧩 Módulos
 
-### 6. Iniciar sesión
+<table>
+<tr>
+<td width="33%" valign="top">
 
-Accede desde `http://localhost/sonrisa_perfecta/login.php`.
+### 🧑‍🤝‍🧑 Pacientes
+Altas, consulta, edición y eliminación.
 
-## Estructura del proyecto
+### 🩺 Odontólogos
+Gestión del equipo profesional.
 
-```
-sonrisa_perfecta/
-├── config/
-│   └── database.php        # Conexión PDO
-├── database/
-│   └── sonrisa_perfecta.sql
-├── docs/
-│   └── img/                # Capturas para este README
-├── login.php
-├── register.php
-└── README.md
-```
+### 📅 Citas
+Agenda y próximas citas en el dashboard.
 
-> Ajusta este árbol para que refleje las carpetas reales del proyecto (módulos, assets, includes, etc.).
+</td>
+<td width="33%" valign="top">
 
-## Módulos
+### 📝 Diagnósticos
+Registro clínico por paciente.
 
-| Módulo | Funciones |
-|---|---|
-| Acceso | Inicio de sesión, registro y cierre de sesión |
-| Dashboard | Indicadores, próximas citas y pacientes recientes |
-| Pacientes | Alta, consulta, edición y eliminación |
-| Odontólogos | Alta, consulta, edición y eliminación |
-| Citas | Alta, consulta, edición y eliminación |
-| Diagnósticos | Alta, consulta, edición y eliminación |
-| Tratamientos | Alta, consulta, edición y eliminación |
-| Servicios | Alta, consulta, edición y eliminación |
-| Pagos | Registro por efectivo, tarjeta de crédito, tarjeta de débito o Yape |
-| Reportes | Ingresos mensuales, atenciones y citas pendientes, con opción de imprimir |
+### 🦷 Tratamientos
+Seguimiento de procedimientos.
 
-Todas las tablas incluyen búsqueda rápida.
+### 🧾 Servicios
+Catálogo de servicios ofrecidos.
 
-## Seguridad
+</td>
+<td width="33%" valign="top">
 
-| Riesgo | Medida aplicada |
-|---|---|
-| Inyección SQL | Consultas preparadas con PDO |
-| Almacenamiento de contraseñas | `password_hash()` y `password_verify()` |
-| CSRF | Token en todos los formularios POST |
-| XSS | Escape de salida con `htmlspecialchars()` |
-| Secuestro de sesión | Regeneración del ID de sesión al iniciar sesión |
+### 💰 Pagos
+💵 Efectivo · 💳 Crédito · 💳 Débito · 📲 Yape
 
-## Solución de problemas
+### 📊 Reportes
+Ingresos mensuales, atenciones y citas pendientes, con impresión.
 
-**Apache no inicia (puerto 80 ocupado).**
-Otro programa (Skype, IIS, etc.) está usando el puerto. Ciérralo o cambia el puerto en `httpd.conf`, y accede con `http://localhost:8080/sonrisa_perfecta/`.
+### 🔐 Acceso
+Login, registro y cierre de sesión.
 
-**MySQL no inicia (puerto 3306 ocupado).**
-Es probable que haya otra instancia de MySQL en ejecución. Deténla o cambia el puerto en `my.ini` y en `config/database.php`.
+</td>
+</tr>
+</table>
 
-**Error "could not find driver".**
-Activa `extension=pdo_mysql` en `php.ini` y reinicia Apache.
+✨ **Extras:** búsqueda rápida en todas las tablas · diseño adaptable · reportes imprimibles.
 
-**Error de conexión a la base de datos.**
-Comprueba que MySQL esté activo, que la base `sonrisa_perfecta` exista y que las credenciales de `config/database.php` sean correctas.
+## 🔒 Seguridad
 
-**La importación del SQL falla o se corta.**
-Aumenta `upload_max_filesize` y `post_max_size` en `php.ini`, o importa el archivo desde la consola con `mysql -u root < database/sonrisa_perfecta.sql`.
+| | Riesgo | Medida aplicada |
+|:---:|---|---|
+| 🛡️ | Inyección SQL | PDO con consultas preparadas |
+| 🔑 | Contraseñas | `password_hash()` y `password_verify()` |
+| 🎟️ | CSRF | Token en todos los formularios POST |
+| 🧼 | XSS | Escape con `htmlspecialchars()` |
+| 🪪 | Sesiones | Regeneración del ID al iniciar sesión |
 
-**No puedo eliminar un registro.**
-Las claves foráneas lo impiden si existen datos relacionados (por ejemplo, un paciente con citas). Elimina primero los registros dependientes.
+## 🛠️ Solución de problemas
 
-## Limitaciones y hoja de ruta
+<details>
+<summary><b>Apache no inicia (puerto 80 ocupado)</b></summary>
+<br>
+Cierra el programa que usa el puerto (Skype, IIS…) o cambia el puerto en <code>httpd.conf</code> y entra por <code>localhost:8080</code>.
+</details>
 
-Este proyecto es una base funcional con fines académicos y **no debe usarse con datos reales de pacientes** sin completar, como mínimo:
+<details>
+<summary><b>MySQL no inicia (puerto 3306 ocupado)</b></summary>
+<br>
+Detén otras instancias de MySQL o cambia el puerto en <code>my.ini</code> y en <code>config/database.php</code>.
+</details>
 
-- [ ] Permisos por rol en cada módulo.
-- [ ] Registro de auditoría de acciones.
-- [ ] Copias de seguridad automatizadas.
-- [ ] Validación de solapamiento de citas.
-- [ ] Política de privacidad y cumplimiento de la normativa de protección de datos personales.
-- [ ] Módulo de administración de usuarios.
+<details>
+<summary><b>Error "could not find driver"</b></summary>
+<br>
+Activa <code>extension=pdo_mysql</code> en <code>php.ini</code> y reinicia Apache.
+</details>
 
-**Sobre los roles:** el registro público crea usuarios con rol `recepcion`. Para crear un administrador, cambia el rol directamente en phpMyAdmin (tabla de usuarios) hasta que exista un módulo de gestión.
+<details>
+<summary><b>La importación del SQL falla</b></summary>
+<br>
+Aumenta <code>upload_max_filesize</code> y <code>post_max_size</code>, o importa por consola: <code>mysql -u root &lt; database/sonrisa_perfecta.sql</code>.
+</details>
 
-## Licencia y autoría
+<details>
+<summary><b>No puedo eliminar un registro</b></summary>
+<br>
+Las claves foráneas lo bloquean si hay datos relacionados. Elimina primero los registros dependientes.
+</details>
 
-- **Autor:** _tu nombre_
-- **Institución / curso:** _opcional_
-- **Licencia:** _MIT, o indica la que corresponda_
+## 🗺️ Roadmap
+
+- [ ] Permisos por rol en cada módulo
+- [ ] Auditoría de acciones
+- [ ] Copias de seguridad automatizadas
+- [ ] Validación de solapamiento de citas
+- [ ] Políticas de privacidad y protección de datos
+- [ ] Módulo de administración de usuarios
+
+> [!WARNING]
+> Proyecto **académico**. No lo uses con datos reales de pacientes sin completar los puntos anteriores.
+
+> [!NOTE]
+> El registro público crea usuarios con rol `recepcion`. Para crear un administrador, cambia el rol directamente en phpMyAdmin.
+
+<br>
+
+<div align="center">
+
+**Hecho con 🦷 y ☕ · Proyecto académico**
+
+<sub>Autor: _tu nombre_ · Licencia: _MIT_</sub>
+
+</div>
